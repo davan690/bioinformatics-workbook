@@ -59,16 +59,16 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : google #lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  search_engine_id       : 009853197685285203469:hvlu68c8wpc
   instant_search         : # false (default), true
 # SEO Related
 google_site_verification :
@@ -76,14 +76,22 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+
+
 # Social Sharing
 twitter:
   username               : isugif
+  url                    : https://twitter.com/isugif
 facebook:
   username               :
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
+email:
+  url                    :
+website:
+  url                    :
+
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -105,7 +113,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Computational Biologist"
   location         : "Ames, IA"
-  email            :
+  email            : gifhelp@iastate.edu
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -114,7 +122,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : https://github.com/isugenomics
   gitlab           :
   google_plus      :
   keybase          :
@@ -146,7 +154,7 @@ exclude:
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/plugins
-  - assets/js/_main.js
+    - assets/js/_main.js
   - assets/js/vendor
   - Capfile
   - CHANGELOG
@@ -210,6 +218,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -218,6 +227,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 
 # Archives
@@ -278,6 +288,6 @@ defaults:
       related: true
       layout: single
       author_profile: false
-      share: false
+
 
 theme: jekyll-theme-minimal

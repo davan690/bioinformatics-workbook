@@ -1,6 +1,8 @@
 ---
 title: Genome Assembly
 layout: single
+author: Rick Masonbrink
+author_profile: true
 header:
   overlay_color: "444444"
   overlay_image: /assets/images/dna.jpg
@@ -11,7 +13,7 @@ header:
 Dependencies: Python 2.7,python FastaIndex, py-pillow, LAST assembler
 
 ### Load the dependencies and needed files
-```
+```bash
 #Things needed to run pyscaf
 git clone https://github.com/lpryszcz/pyScaf.git
 
@@ -37,12 +39,10 @@ gunzip GCF_000732965.1_ASM73296v1_genomic.fna.gz
 #pyscaf will throw errors with a fna extension, so change those to .fa
 mv GCF_000249815.1_ASM24981v2_genomic.fna GCF_000249815.1_ASM24981v2_genomic.fa
 mv GCF_000732965.1_ASM73296v1_genomic.fna GCF_000732965.1_ASM73296v1_genomic.fa
-
-
 ```
 
 ### Run pyscaf on the two E. coli genomes
-```
+```bash
 module load python
 module load py-fastaindex/0.11rc7-py2-sj3lhkk
 module load last
@@ -55,7 +55,7 @@ module load py-pillow/3.2.0-py2-ods24od
 
 ### What are the changes in the genome stats?
 
-```
+```bash
 cd /work/GIF/remkv6/USDA/16_pyscaf/assemblathon2-analysis
 perl assemblathon_stats.pl ../GCF_000249815.1_ASM24981v2_genomic.fa
 ##############################################################################
@@ -344,6 +344,9 @@ scaffold00005   12054261        62      KV766492.1 KV766494.1 LXSY01004106.1 LXS
 So 108 scaffolds put into chromosome 1, 81 into chromosome 2, 43 into chromosome 3, 45 into chromosome 4, 62 into chromosome 5.
 
 #unfortunately too many scaffolds to show in the dotplot, but a figure can be drawn by removing some of the small un-scaffoldable scaffolds from the assembly prior to running pyscaf.
-
-
 ```
+
+
+---
+
+* [Back to the Assembly and Annotation Index page](../GenomeAnnotation/annotation_and_assembly_index.md)

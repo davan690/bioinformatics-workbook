@@ -14,10 +14,10 @@ header:
 ## Index
 
 * <span style="color:lightblue">Introduction to Unix</span>
-  * [Unix Basics 1](unix-basics-1.md)
-  * [Unix Basics 2](unix-basics-2.md)
-  * [Grep](unix-basics-3.md)
-  * [Sed](unix-basics-4.md)
+  * [Unix Basics 1](Unix/unix-basics-1.md)
+  * [Unix Basics 2](Unix/unix-basics-2.md)
+  * [Grep](Unix/unix-basics-3.md)
+  * [Sed](Unix/unix-basics-4.md)
   * [Introduction to regular expressions](../introduction/introduction-to-regular-expressions.md)
 
 
@@ -37,15 +37,9 @@ header:
     * [Introduction to Containers](/HPC/Containers/Intro_Singularity.md)
     * [Creating Containers Using Singularity](/HPC/Containers/creatingContainers.md)
     * [Modifying Existing Containers](/HPC/Containers/modifyingExistingContainers.md)
-
-* <span style="color:lightblue">GitHub</span>
-  * [Introduction to GitHub](/github/introgithub.md)
-  * [Some Helpful Commands For Your New Repository](/github/github2.md)
-  * [Best Practices on Github](/github/githubBasics.md)
 * <span style="color:lightblue">Bioawk</span>
   * [Bioawk Basics](bioawk-basics.md)
-* [Slack](slack.md)
-* [Markdown](Markdown.md)
+
 * [Viewing Files In Remote Machine Without Downloading](/HPC/viewing-files-in-remote-machine-without-downloading-locally.md)
 
 ---

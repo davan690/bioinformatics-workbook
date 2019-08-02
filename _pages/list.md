@@ -10,10 +10,10 @@ header:
 
 ### Command Line Basics and Useful Programs
 * <span style="color:lightblue">Introduction to Unix</span>
-  * [Unix Basics 1](../Appendix/unix-basics-1.md)  
-  * [Unix Basics 2](../Appendix/unix-basics-2.md)
-  * [Unix Basics 3 (grep)](../Appendix/unix-basics-3.md)
-  * [Unix Basics 4 (sed)](../Appendix/unix-basics-4.md)
+  * [Unix Basics 1](../Appendix/Unix/unix-basics-1.md)  
+  * [Unix Basics 2](../Appendix/Unix/unix-basics-2.md)
+  * [Unix Basics 3 (grep)](../Appendix/Unix/unix-basics-3.md)
+  * [Unix Basics 4 (sed)](../Appendix/Unix/unix-basics-4.md)
 * <span style="color:lightblue">HPC</span>
   * [How to Install a Program](../Appendix/HPC/guide-for-installing-various-types-of-programs-in-linux.md)
   * <span style="color:lightblue">SSH</span>
@@ -30,16 +30,19 @@ header:
     * [Introduction to Containers](../Appendix/HPC/Containers/Intro_Singularity.md)
     * [Creating Containers Using Singularity](../Appendix/HPC/Containers/creatingContainers.md)
     * [Modifying Existing Containers](../Appendix/HPC/Containers/modifyingExistingContainers.md)
+* <span style="color:lightblue">Bioawk</span>
+  * [Bioawk Basics](../Appendix/bioawk-basics.md)
 
+* [Viewing Files In Remote Machine Without Downloading](../Appendix/HPC/viewing-files-in-remote-machine-without-downloading-locally.md)
+
+## [Project Management landing page](https://isugenomics.github.io/bioinformatics-workbook/projectManagement/projectManagement_index)
+* [Introduction to Project Management](https://isugenomics.github.io/bioinformatics-workbook/projectManagement/Intro_projectManagement)
 * <span style="color:lightblue">GitHub</span>
   * [Introduction to GitHub](../Appendix/github/introgithub.md)
   * [Some Helpful Commands For Your New Repository](../Appendix/github/github2.md)
-  * [Best Practices on Github](../Appendix/github/githubBasics.md)
-* <span style="color:lightblue">Bioawk</span>
-  * [Bioawk Basics](../Appendix/bioawk-basics.md)
 * [Slack](../Appendix/slack.md)
 * [Markdown](../Appendix/Markdown.md)
-* [Viewing Files In Remote Machine Without Downloading](../Appendix/HPC/viewing-files-in-remote-machine-without-downloading-locally.md)
+
 
 ## [BLAST](../dataAnalysis/blast/blast_index.md)
 
@@ -65,7 +68,7 @@ header:
   * [Converting FastQ to FASTA](../dataWrangling/fastaq-manipulations/converting-fastq-format-to-fasta.md)
   * [FASTQ Quality trimming](../dataWrangling/fastaq-manipulations/fastq-quality-trimming.md)
   * [Retrieving FASTA file using sequence ID](../dataWrangling/fastaq-manipulations/retrieve-fasta-sequences-using-sequence-ids.md)
-* <span style="color:lightblue">Manuplating Excel data sheets</span>
+* <span style="color:lightblue">Manipulating Excel data sheets</span>
   * [Create Workbook from Multiple Text Files](../dataWrangling/microsoftExcel/import-multiple-text-files-as-separate-worksheets-in-excel.md)
   * [Export multiple worksheets as separate text files ](../dataWrangling/microsoftExcel/export-multiple-worksheets-as-separate-text-files-in-excel.md)
   * [Create Index for All Worksheets](../dataWrangling/microsoftExcel/generate-index-sheet-linking-all-spreadsheets-in-excel.md)
@@ -74,7 +77,7 @@ header:
   * [Deposition of Data to NCBI SRA](../dataWrangling/NCBI_Data_Submission.md)
 
 ### Bioinformatics terminology
-* [Read, Contigs, Scafolds and Choromosome](../introduction/dataTerminology.md)
+* [Reads, Contigs, Scaffolds and Chromosome](../introduction/dataTerminology.md)
 * [File Formats](../introduction/fileFormats.md)
 * [Fasta Quality Score](../introduction/fastqquality-score-encoding.md)
 
@@ -82,18 +85,37 @@ header:
 * [RNA-Seq Example with a Genome Assembly](../dataAnalysis/RNA-Seq/RNA-SeqIntro/RNAseq-using-a-genome.md)
 * [RNA-Seq Example without a Genome Assembly](../dataAnalysis/RNA-Seq/RNA-SeqIntro/RNAseq-without-a-genome.md)
 * [Different Expression Analysis:DESeq2](../dataAnalysis/RNA-Seq/RNA-SeqIntro/Differential-Expression-Analysis.md)
+* [10x genomics single-cell RNAseq analysis from SRA data using Cell Ranger and Seurat](../dataAnalysis/RNA-Seq/Single_Cell_RNAseq/Chromium_Cell_Ranger.md)
+
 
 ### Genome Assembly and Annotation
-* <span style="color:lightblue">Genome Assembly</span>
-  * [GenomeScope to Estimate Genome Size](../dataAnalysis/GenomeAssembly/genomescope.md)
-  * [Canu for Long Read Assembly](../dataAnalysis/GenomeAssembly/LongRead/Canu.md)
-    * [Canu on XSEDE Bridges Machine](../dataAnalysis/GenomeAssembly/LongRead/Canu_bridges.md)
-  * [Mascurca with Pacbio and Illumina](../dataAnalysis/GenomeAssembly/Hybrid/MaSuRCA.md)
-  * [Genome Scaffolding Using Synteny eith Pyscaf](../dataAnalysis/GenomeAssembly/Pyscaf_Synteny_Scaffolding.md)
-* <span style="color:lightblue">Genome Annotation</span>
-  * [Introduction to Maker Gene Prediction](../dataAnalysis/GenomeAnnotation/Intro_To_Maker.md)
-  * [Introduction to Braker2 Gene Prediction](../dataAnalysis/GenomeAnnotation/Intro_to_Braker2.md)
-  * [Motif Identification and Finding with MEME and FIMO](../dataAnalysis/GenomeAnnotation/MEME_Motif_Finding_In_Genomes.md)  
+
+* <span style="color:lightblue">[Introduction to Genome Assembly](../dataAnalysis/GenomeAssembly/Intro_GenomeAssembly.md)</span>
+    * [Introduction to Canu](../dataAnalysis/GenomeAssembly/Assemblers/canu.md)
+      * [Canu on XSEDE Bridges Super Computer](../dataAnalysis/GenomeAssembly/BT/BT_Canu_bridges.md)
+    * [Introduction to SPAdes](../dataAnalysis/GenomeAssembly/Assemblers/spades.md)
+    * [Introduction to MaSuRCA](../dataAnalysis/GenomeAssembly/Assemblers/MaSuRCA.md)
+* <span style="color:lightblue">Introduction to Genome Annotation</span>
+    * [Introduction to Maker Gene Prediction](../dataAnalysis/GenomeAnnotation/Intro_To_Maker.md)
+    * [Introduction to Braker2 Gene Prediction](../dataAnalysis/GenomeAnnotation/Intro_to_Braker2.md)
+    * [Motif Identification and Finding with MEME and FIMO](../dataAnalysis/GenomeAnnotation/MEME_Motif_Finding_In_Genomes.md)  
+* <span style="color:lightblue">Tools for assessing the quality of a Genome Assembly</span>
+    * [GenomeScope to Estimate Genome Size](../dataAnalysis/GenomeAssembly/genomescope.md)
+    * [Checking a genome for contamination from vectors using UniVec](../dataAnalysis/GenomeAssembly/univecContaminationCheck.md)
+    * [Check a genome for PhiX contamination](../dataAnalysis/GenomeAssembly/PhiXContaminationCheck.md)
+* <span style="color:lightblue">Tools for Scaffolding assemblies</span>  
+    * [Genome Scaffolding Using Synteny with Pyscaf](../dataAnalysis/GenomeAssembly/Pyscaf_Synteny_Scaffolding.md)
+    * [Hi-C scaffolding](../GenomeAssembly/Hybrid/Scaffolding_with_HiC_Juicer.md)
+* <span style="color:lightblue">Genome Assembly Examples</span>
+  * [Bacillus thuringiensis data set](../dataAnalysis/GenomeAssembly/BT/BT_background.md)
+    * [Canu Assembly of Bacillus thuringiensis](../dataAnalysis/GenomeAssembly/BT/BT_Canu.md)
+    * [SPAdes Assembly of Bacillus thuringiensis](../dataAnalysis/GenomeAssembly/BT/BT_spades.md)
+  * [Arabidopsis thaliana data set](../dataAnalysis/GenomeAssembly/Arabidopsis/Arabidopsis_background.md)
+    * [MaSuRCA assembly of Arabidopsis thanliana](../dataAnalysis/GenomeAssembly/Arabidopsis/AT_MaSuRCA.md )
+    * [Short read assembly using Platanus](../dataAnalysis/GenomeAssembly/Arabidopsis/AT_platanus-genome-assembly.md)
+* <span style="color:lightblue">Genetic Map Construction</span>
+    * [Generating Genetic Maps from GBS data](../dataAnalysis/GenomeAssembly/GeneticMaps/creating-genetic-maps.md)
+    * [Using Genetic Map to create AGPs](../dataAnalysis/GenomeAssembly/GeneticMaps/scaffolding-using-genetic-maps.md)
 
 ### Comparative Genomics
 * [Gene Orthology, Synteny, and Visualzation with Opscan, Iadhore and Circos](../dataAnalysis/ComparativeGenomics/Gene_Orthology_And_Synteny.md)
@@ -113,3 +135,4 @@ header:
 * [Viewing Files Remotely without Transferring](../Appendix/HPC/viewing-files-in-remote-machine-without-downloading-locally.md)
 * [Creating Boxplots in R](../dataWrangling/R/generate-boxplots.md)
 * [Creating Heatmaps in R](../dataWrangling/R/generate_heatmaps.md)
+* [Visulaize Gaps in the Genome assemblies](../dataWrangling/R/visualize-gaps-in-genomes.md)
