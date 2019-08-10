@@ -15,9 +15,9 @@ header:
 
 * <span style="color:lightblue">Introduction to Unix</span>
   * [Unix Basics 1](Unix/unix-basics-1.md)
-  * [Unix Basics 2](Unix/unix-basics-2.md)
-  * [Grep](Unix/unix-basics-3.md)
-  * [Sed](Unix/unix-basics-4.md)
+  * [Unix Basics 2](Unix/unix-basics-2admin.md)
+  * [Grep](Unix/unix-basics-3grep.md)
+  * [Sed](Unix/unix-basics-4sed.md)
   * [Introduction to regular expressions](../introduction/introduction-to-regular-expressions.md)
 
 
@@ -38,11 +38,11 @@ header:
     * [Creating Containers Using Singularity](/HPC/Containers/creatingContainers.md)
     * [Modifying Existing Containers](/HPC/Containers/modifyingExistingContainers.md)
 * <span style="color:lightblue">Bioawk</span>
-  * [Bioawk Basics](bioawk-basics.md)
+  * [Bioawk Basics](Unix/bioawk-basics.md)
 
 * [Viewing Files In Remote Machine Without Downloading](/HPC/viewing-files-in-remote-machine-without-downloading-locally.md)
 
 ---
 
-[Next](/fileTransfer/downloading-files-via-wget.md){: .btn  .btn--primary}
+[Next](Unix/unix-basics-1.md){: .btn  .btn--primary}
 [Table of contents](../index.md){: .btn  .btn--primary}

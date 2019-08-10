@@ -20,8 +20,8 @@ title                    : "Bioinformatics Workbook"
 title_separator          : "-"
 name                     : ""
 description              : "A workbook to help scientists working on bioinformatics projects"
-url                      : "https://isugenomics.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/bioinformatics-workbook" # the subpath of your site, e.g. "/blog"
+url                      : "https://bioinformaticsworkbook.org" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "isugenomics/bioinformatics-workbook" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 permalink: none
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -122,7 +122,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : https://github.com/isugenomics
+  github           : isugenomics
   gitlab           :
   google_plus      :
   keybase          :
